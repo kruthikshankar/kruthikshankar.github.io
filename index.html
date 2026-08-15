@@ -342,38 +342,38 @@
   <div class="sec-label reveal">01 &mdash; Work</div>
   <h2 class="sec-title reveal">Selected Projects</h2>
   <div class="projects-list">
-    <a href="https://github.com/kruthikshankar" target="_blank" class="project-card reveal">
+    <a href="https://github.com/kruthikshankar/traffic-prediction" target="_blank" class="project-card reveal">
       <div class="project-num">01</div>
       <div class="project-body">
         <div class="project-type">AI / Machine Learning</div>
         <h3>Explainable AI &mdash; Traffic Prediction</h3>
-        <p>Processed 5M+ GPS and sensor data points to identify congestion hotspots with 85% accuracy. Predictive models forecast traffic 30 min ahead; Grafana dashboards used by city officials cut commute times by 15% in pilot regions.</p>
+        <p>XGBoost and LightGBM predict road-segment speed 30 minutes ahead (R&sup2; 0.93), using a GeoPandas spatial feature for neighboring congestion. SHAP explains what drove each prediction; a Grafana dashboard renders live predictions from Postgres.</p>
         <div class="project-chips">
-          <span class="chip">XGBoost</span><span class="chip">LightGBM</span><span class="chip">GeoPandas</span><span class="chip">Hadoop</span><span class="chip">Grafana</span><span class="chip">AWS EC2</span>
+          <span class="chip">XGBoost</span><span class="chip">LightGBM</span><span class="chip">GeoPandas</span><span class="chip">SHAP</span><span class="chip">Grafana</span><span class="chip">Docker</span>
         </div>
       </div>
       <div class="project-arrow">&#8599;</div>
     </a>
-    <a href="https://github.com/kruthikshankar" target="_blank" class="project-card reveal">
+    <a href="https://github.com/kruthikshankar/smartride-matcher" target="_blank" class="project-card reveal">
       <div class="project-num">02</div>
       <div class="project-body">
         <div class="project-type">Optimization / Full-Stack</div>
         <h3>SmartRide Matcher</h3>
-        <p>Ride-sharing platform matching up to 4 passengers per driver via graph optimization. Reduced total travel distance by 25% using shortest-path algorithms and optimal rider-driver assignment. Supported 100+ concurrent users.</p>
+        <p>Pools ride requests that save distance when shared, via a NetworkX shareability graph and max-weight matching, then assigns each trip to the nearest driver with an OR-Tools CP-SAT min-cost assignment. Verified 22% less total distance than one rider per driver.</p>
         <div class="project-chips">
-          <span class="chip">NetworkX</span><span class="chip">OR-Tools</span><span class="chip">Flask</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">AWS EC2</span>
+          <span class="chip">NetworkX</span><span class="chip">OR-Tools</span><span class="chip">Flask</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span>
         </div>
       </div>
       <div class="project-arrow">&#8599;</div>
     </a>
-    <a href="https://github.com/kruthikshankar" target="_blank" class="project-card reveal">
+    <a href="https://github.com/kruthikshankar/market-sentiment-analyzer" target="_blank" class="project-card reveal">
       <div class="project-num">03</div>
       <div class="project-body">
         <div class="project-type">NLP / Data Engineering</div>
         <h3>Real-Time Market Sentiment Analyzer</h3>
-        <p>Python pipeline correlating live stock prices with NLP sentiment from financial news and Twitter. Scraped via Tweepy &amp; NewsAPI, analyzed with VADER, visualized in Kibana dashboards with Alpha Vantage OHLC data and real-time alerts.</p>
+        <p>Fetches recent company news (NewsAPI) and scores it with FinBERT, a transformer model fine-tuned for financial text, then visualizes sentiment trends by company in a Streamlit + Plotly dashboard.</p>
         <div class="project-chips">
-          <span class="chip">Python</span><span class="chip">NLTK</span><span class="chip">VADER</span><span class="chip">TextBlob</span><span class="chip">PostgreSQL</span><span class="chip">Kibana</span>
+          <span class="chip">Python</span><span class="chip">FinBERT</span><span class="chip">Transformers</span><span class="chip">SQLAlchemy</span><span class="chip">Streamlit</span><span class="chip">Plotly</span>
         </div>
       </div>
       <div class="project-arrow">&#8599;</div>
